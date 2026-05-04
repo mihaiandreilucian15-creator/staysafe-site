@@ -6,105 +6,166 @@
   <title>StaySafe - Ajutor atunci când tu nu mai poți</title>
 
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #0b0b0f;
-      color: white;
-      text-align: center;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
     .container {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
+      width: 92%;
+      max-width: 1120px;
+      margin: 0 auto;
     }
 
-    .logo {
-      width: 160px;
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+      background: rgba(11,11,15,0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .nav-button {
+      background: #ff2d2d;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-logo {
+      width: 140px;
       margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 40px;
+      font-size: 60px;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       color: #ccc;
       max-width: 700px;
-      margin: 10px auto;
+      margin: auto;
     }
 
     .btn {
+      margin-top: 25px;
       display: inline-block;
-      margin-top: 20px;
-      background: red;
+      background: #ff2d2d;
       padding: 15px 30px;
       border-radius: 10px;
       color: white;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
     }
 
-    .section {
-      border-top: 1px solid #222;
+    section { padding: 70px 0; border-top: 1px solid #222; }
+
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-lead {
+      text-align: center;
+      color: #ccc;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
-  <img src="logo.png" alt="StaySafe logo" class="logo">
+<header>
+  <div class="container nav">
+    <div class="logo-text">StaySafe</div>
+    <a class="nav-button" href="#sustine">Susține proiectul</a>
+  </div>
+</header>
 
-  <h1>StaySafe</h1>
-  <p>Aplicația care trimite ajutor atunci când tu nu mai poți.</p>
+<section class="hero">
+  <div class="container">
 
-  <a class="btn" href="#sustine">Susține proiectul</a>
-</div>
+    <!-- LOGO -->
+    <img src="logo.png" class="hero-logo" alt="StaySafe logo">
 
-<div class="container section">
-  <h2>Ce poate face StaySafe</h2>
-  <p>SOS cu locație, detectare cădere, notificare rapidă și funcționare în fundal.</p>
-</div>
+    <h1>Ajutor atunci când tu nu mai poți cere ajutor</h1>
 
-<div class="container section">
-  <h2>Povestea din spate</h2>
+    <p>
+      StaySafe este o aplicație mobilă de siguranță personală, creată pentru urgențe medicale și situații de pericol.
+    </p>
 
-  <p>StaySafe nu a început ca un proiect sau o idee de business.</p>
+    <a class="btn" href="#sustine">Susține StaySafe</a>
+  </div>
+</section>
 
-  <p>A început dintr-o nevoie reală.</p>
+<section>
+  <div class="container">
+    <h2 class="section-title">Ce poate face StaySafe</h2>
+    <p class="section-lead">
+      SOS cu locație, detectare cădere, notificare rapidă și funcționare în fundal.
+    </p>
+  </div>
+</section>
 
-  <p>
-    Problemele mele de sănătate m-au pus de mai multe ori în situații în care fiecare secundă conta.
-  </p>
+<section>
+  <div class="container">
+    <h2 class="section-title">Povestea din spate</h2>
 
-  <p>
-    Am căutat soluții existente, dar niciuna nu era suficient de simplă sau rapidă.
-  </p>
+    <p class="section-lead">StaySafe nu a început ca un proiect.</p>
+    <p class="section-lead">A început dintr-o nevoie reală.</p>
 
-  <p>Așa că am decis să construiesc eu una.</p>
+    <p class="section-lead">
+      Problemele mele de sănătate m-au pus în situații în care fiecare secundă conta.
+    </p>
 
-  <p>StaySafe este rezultatul acelei decizii.</p>
+    <p class="section-lead">
+      Am căutat soluții existente, dar niciuna nu era suficient de rapidă sau simplă.
+    </p>
 
-  <p>
-    Nu este doar o aplicație. Este încercarea mea de a avea o plasă de siguranță atunci când nu mai poți face nimic.
-  </p>
-</div>
+    <p class="section-lead">Așa că am decis să construiesc eu una.</p>
 
-<div class="container section" id="sustine">
-  <h2>Susține proiectul</h2>
+    <p class="section-lead">
+      StaySafe este rezultatul acelei decizii.
+    </p>
+  </div>
+</section>
 
-  <a class="btn" href="https://4fund.com/ro/pda5jh" target="_blank">
-    Donează
-  </a>
-</div>
+<section id="sustine">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title">Susține proiectul</h2>
+
+    <a class="btn" href="https://4fund.com/ro/pda5jh" target="_blank">
+      Donează
+    </a>
+  </div>
+</section>
 
 </body>
 </html>
