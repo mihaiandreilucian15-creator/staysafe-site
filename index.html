@@ -70,6 +70,14 @@
       color: #ff2d2d;
     }
 
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     .nav-button {
       background: #ff2d2d;
       color: #fff;
@@ -77,6 +85,12 @@
       border-radius: 999px;
       font-weight: 700;
       font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .nav-button.secondary {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
     }
 
     .hero {
@@ -133,7 +147,9 @@
       align-items: center;
     }
 
-    .primary-btn, .secondary-btn {
+    .primary-btn,
+    .secondary-btn,
+    .download-btn {
       padding: 15px 22px;
       border-radius: 14px;
       font-weight: 800;
@@ -149,10 +165,23 @@
       box-shadow: 0 16px 34px rgba(255,45,45,0.24);
     }
 
+    .download-btn {
+      background: #ffffff;
+      color: #111111;
+      box-shadow: 0 16px 34px rgba(255,255,255,0.14);
+    }
+
     .secondary-btn {
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.12);
       color: #fff;
+    }
+
+    .download-note {
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 12px;
+      max-width: 620px;
     }
 
     .phone-card {
@@ -257,7 +286,8 @@
       margin-bottom: 10px;
     }
 
-    .card p, .card li {
+    .card p,
+    .card li {
       color: #d5d5dd;
       font-size: 16px;
     }
@@ -297,6 +327,30 @@
       border-radius: 30px;
       padding: 34px;
       max-width: 960px;
+    }
+
+    .download-box {
+      background:
+        radial-gradient(circle at top left, rgba(255,45,45,0.20), transparent 34%),
+        linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.045));
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 30px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .download-box h2 {
+      margin-bottom: 12px;
+    }
+
+    .download-steps {
+      background: rgba(0,0,0,0.22);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 22px;
     }
 
     ul {
@@ -344,7 +398,8 @@
       .hero-grid,
       .split,
       .grid-3,
-      .roadmap {
+      .roadmap,
+      .download-box {
         grid-template-columns: 1fr;
       }
 
@@ -366,8 +421,13 @@
         font-size: 46px;
       }
 
+      .nav-actions {
+        gap: 8px;
+      }
+
       .nav-button {
-        padding: 10px 14px;
+        padding: 10px 12px;
+        font-size: 12px;
       }
 
       .hero-logo {
@@ -394,7 +454,11 @@
         <img src="logo.png" alt="StaySafe logo">
         <div class="logo-text">Stay<span>Safe</span></div>
       </div>
-      <a class="nav-button" href="#sustine">Susține proiectul</a>
+
+      <div class="nav-actions">
+        <a class="nav-button secondary" href="#download">Descarcă FREE</a>
+        <a class="nav-button" href="#sustine">Susține proiectul</a>
+      </div>
     </div>
   </header>
 
@@ -414,8 +478,13 @@
 
           <div class="cta-row">
             <a class="primary-btn" href="#sustine">Susține StaySafe</a>
+            <a class="download-btn" href="app-debug.apk" download>Descarcă StaySafe FREE</a>
             <a class="secondary-btn" href="#functionalitati">Vezi ce face aplicația</a>
           </div>
+
+          <p class="download-note">
+            Versiune Android de test. Pentru instalare poate fi necesar să permiți instalarea din surse necunoscute.
+          </p>
         </div>
 
         <div class="phone-card">
@@ -435,6 +504,31 @@
 
             <div class="phone-feature">Dosar medical disponibil rapid</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container download-box">
+        <div>
+          <h2 class="section-title">Testează StaySafe FREE pe Android</h2>
+          <p class="section-lead">
+            Poți descărca versiunea Android de test direct de pe site. Aceasta este o versiune MVP, destinată testării înainte de lansarea oficială în Google Play.
+          </p>
+          <a class="download-btn" href="app-debug.apk" download>Descarcă APK Android</a>
+          <p class="download-note">
+            Dacă telefonul afișează un avertisment, este normal pentru aplicațiile instalate în afara Google Play.
+          </p>
+        </div>
+
+        <div class="download-steps">
+          <h3>Pași de instalare</h3>
+          <ul>
+            <li>Descarcă fișierul APK</li>
+            <li>Permite instalarea din surse necunoscute</li>
+            <li>Deschide StaySafe și setează contactul de urgență</li>
+            <li>Testează SOS doar în condiții controlate</li>
+          </ul>
         </div>
       </div>
     </section>
