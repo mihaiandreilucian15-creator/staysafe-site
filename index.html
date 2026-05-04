@@ -11,31 +11,39 @@
       font-family: Arial, sans-serif;
       background: #0b0b0f;
       color: white;
+      text-align: center;
     }
 
     .container {
-      width: 90%;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 900px;
       margin: auto;
-      padding: 40px 0;
     }
 
-    h1, h2 {
-      text-align: center;
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
     }
 
     p {
-      text-align: center;
-      color: #ccc;
       font-size: 18px;
+      color: #ccc;
       max-width: 700px;
       margin: 10px auto;
     }
 
     .btn {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
+      display: inline-block;
+      margin-top: 20px;
       background: red;
       padding: 15px 30px;
       border-radius: 10px;
@@ -45,16 +53,19 @@
     }
 
     .section {
-      border-bottom: 1px solid #222;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
 
 <body>
 
-<div class="container section">
+<div class="container">
+  <img src="logo.png" alt="StaySafe logo" class="logo">
+
   <h1>StaySafe</h1>
   <p>Aplicația care trimite ajutor atunci când tu nu mai poți.</p>
+
   <a class="btn" href="#sustine">Susține proiectul</a>
 </div>
 
@@ -72,12 +83,10 @@
 
   <p>
     Problemele mele de sănătate m-au pus de mai multe ori în situații în care fiecare secundă conta.
-    Situații în care nu eram sigur dacă aș putea cere ajutor la timp.
   </p>
 
   <p>
-    Am căutat soluții existente, dar niciuna nu era suficient de simplă,
-    suficient de rapidă sau gândită pentru momentele reale.
+    Am căutat soluții existente, dar niciuna nu era suficient de simplă sau rapidă.
   </p>
 
   <p>Așa că am decis să construiesc eu una.</p>
@@ -85,24 +94,16 @@
   <p>StaySafe este rezultatul acelei decizii.</p>
 
   <p>
-    Nu este doar o aplicație.
-    Este încercarea mea de a avea o plasă de siguranță atunci când nu mai poți face nimic.
+    Nu este doar o aplicație. Este încercarea mea de a avea o plasă de siguranță atunci când nu mai poți face nimic.
   </p>
-
-  <p>
-    Dacă această aplicație poate ajuta și alți oameni,
-    atunci știu că tot efortul merită.
-  </p>
-</div>
-
-<div class="container section">
-  <h2>De ce există StaySafe</h2>
-  <p>Creat pentru situații reale în care nu mai poți cere ajutor.</p>
 </div>
 
 <div class="container section" id="sustine">
   <h2>Susține proiectul</h2>
-  <a class="btn" href="https://4fund.com/ro/pda5jh">Donează</a>
+
+  <a class="btn" href="https://4fund.com/ro/pda5jh" target="_blank">
+    Donează
+  </a>
 </div>
 
 </body>
