@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>StaySafe - Ajutor atunci când tu nu mai poți</title>
   <meta name="description" content="StaySafe este o aplicație mobilă de siguranță personală, creată pentru urgențe medicale și situații de pericol." />
 
@@ -13,10 +14,24 @@
       padding: 0;
     }
 
+    :root {
+      --blue: #0b8fef;
+      --blue-dark: #075fa8;
+      --red: #ff1e2d;
+      --red-dark: #dc2626;
+      --dark: #05070a;
+      --text: #0f172a;
+      --muted: #64748b;
+      --soft: #f8fafc;
+      --soft-blue: #eff6ff;
+      --border: #e2e8f0;
+      --card: #ffffff;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b0b0f;
-      color: #ffffff;
+      background: var(--soft);
+      color: var(--text);
       line-height: 1.6;
     }
 
@@ -33,10 +48,10 @@
 
     header {
       padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      background: rgba(11,11,15,0.92);
+      background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
       z-index: 10;
     }
@@ -64,10 +79,11 @@
       font-size: 24px;
       font-weight: 800;
       letter-spacing: 0.5px;
+      color: var(--text);
     }
 
     .logo-text span {
-      color: #ff2d2d;
+      color: var(--blue);
     }
 
     .nav-actions {
@@ -79,25 +95,29 @@
     }
 
     .nav-button {
-      background: #ff2d2d;
+      background: var(--red);
       color: #fff;
       padding: 12px 18px;
       border-radius: 999px;
       font-weight: 700;
       font-size: 14px;
       white-space: nowrap;
+      box-shadow: 0 12px 26px rgba(255, 30, 45, 0.18);
     }
 
     .nav-button.secondary {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: var(--blue);
+      color: #fff;
+      border: 1px solid rgba(11, 143, 239, 0.2);
+      box-shadow: 0 12px 26px rgba(11, 143, 239, 0.16);
     }
 
     .hero {
       padding: 88px 0 64px;
       background:
-        radial-gradient(circle at top left, rgba(255,45,45,0.28), transparent 36%),
-        radial-gradient(circle at bottom right, rgba(60,90,255,0.18), transparent 35%);
+        radial-gradient(circle at top left, rgba(11, 143, 239, 0.16), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(255, 30, 45, 0.12), transparent 35%),
+        linear-gradient(180deg, #ffffff, #f8fafc);
     }
 
     .hero-grid {
@@ -112,18 +132,19 @@
       height: 130px;
       object-fit: contain;
       margin-bottom: 22px;
-      filter: drop-shadow(0 18px 32px rgba(255,45,45,0.22));
+      filter: drop-shadow(0 18px 32px rgba(11, 143, 239, 0.18));
     }
 
     .badge {
       display: inline-block;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #f2f2f2;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--muted);
       padding: 8px 14px;
       border-radius: 999px;
       font-size: 14px;
       margin-bottom: 22px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
     }
 
     h1 {
@@ -131,11 +152,12 @@
       line-height: 1.04;
       margin-bottom: 22px;
       letter-spacing: -1.8px;
+      color: var(--text);
     }
 
     .hero p {
       font-size: 20px;
-      color: #d7d7df;
+      color: var(--muted);
       max-width: 680px;
       margin-bottom: 30px;
     }
@@ -160,43 +182,44 @@
     }
 
     .primary-btn {
-      background: #ff2d2d;
+      background: var(--red);
       color: white;
-      box-shadow: 0 16px 34px rgba(255,45,45,0.24);
+      box-shadow: 0 16px 34px rgba(255, 30, 45, 0.24);
     }
 
     .download-btn {
-      background: #ffffff;
-      color: #111111;
-      box-shadow: 0 16px 34px rgba(255,255,255,0.14);
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 16px 34px rgba(11, 143, 239, 0.22);
     }
 
     .secondary-btn {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #fff;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--text);
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
     }
 
     .download-note {
-      color: #aaa;
+      color: var(--muted);
       font-size: 14px;
       margin-top: 12px;
       max-width: 620px;
     }
 
     .phone-card {
-      background: linear-gradient(180deg, #1b1b24, #0f0f15);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: #ffffff;
+      border: 1px solid var(--border);
       border-radius: 38px;
       padding: 24px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.38);
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
       max-width: 360px;
       margin: 0 auto;
     }
 
     .phone-screen {
-      background: #fff;
-      color: #111;
+      background: linear-gradient(180deg, #ffffff, #eff6ff);
+      color: var(--text);
       border-radius: 30px;
       padding: 24px;
       min-height: 520px;
@@ -204,6 +227,7 @@
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
+      border: 1px solid var(--border);
     }
 
     .phone-top {
@@ -211,14 +235,14 @@
       justify-content: space-between;
       font-size: 13px;
       font-weight: 800;
-      color: #333;
+      color: var(--muted);
     }
 
     .sos-circle {
       width: 190px;
       height: 190px;
       border-radius: 50%;
-      background: #e30000;
+      background: var(--red);
       color: white;
       display: flex;
       align-items: center;
@@ -226,22 +250,24 @@
       margin: 34px auto 18px;
       font-size: 54px;
       font-weight: 900;
-      box-shadow: 0 20px 40px rgba(227,0,0,0.35);
+      box-shadow: 0 20px 40px rgba(255, 30, 45, 0.32);
     }
 
     .mode {
       font-weight: 800;
       font-size: 20px;
+      color: var(--text);
     }
 
     .phone-feature {
-      background: #f2f2f4;
+      background: #ffffff;
       padding: 12px;
       border-radius: 14px;
-      color: #111;
+      color: var(--text);
       font-size: 14px;
       font-weight: 700;
       margin-top: 10px;
+      border: 1px solid var(--border);
     }
 
     section {
@@ -253,10 +279,11 @@
       line-height: 1.1;
       margin-bottom: 18px;
       letter-spacing: -0.8px;
+      color: var(--text);
     }
 
     .section-lead {
-      color: #d1d1da;
+      color: var(--muted);
       font-size: 19px;
       max-width: 820px;
       margin-bottom: 20px;
@@ -275,20 +302,22 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.065);
-      border: 1px solid rgba(255,255,255,0.10);
+      background: var(--card);
+      border: 1px solid var(--border);
       border-radius: 22px;
       padding: 24px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
     }
 
     .card h3 {
       font-size: 22px;
       margin-bottom: 10px;
+      color: var(--text);
     }
 
     .card p,
     .card li {
-      color: #d5d5dd;
+      color: var(--muted);
       font-size: 16px;
     }
 
@@ -296,8 +325,8 @@
       width: 46px;
       height: 46px;
       border-radius: 14px;
-      background: rgba(255,45,45,0.16);
-      color: #ff5b5b;
+      background: rgba(11, 143, 239, 0.10);
+      color: var(--blue);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -313,33 +342,40 @@
     }
 
     .highlight {
-      background: linear-gradient(135deg, rgba(255,45,45,0.18), rgba(255,255,255,0.06));
-      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(135deg, rgba(11, 143, 239, 0.10), rgba(255, 30, 45, 0.06));
+      border: 1px solid var(--border);
       border-radius: 28px;
       padding: 30px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+    }
+
+    .highlight h3 {
+      color: var(--blue);
     }
 
     .story-box {
       background:
-        linear-gradient(135deg, rgba(255,45,45,0.14), rgba(255,255,255,0.055)),
-        rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.12);
+        linear-gradient(135deg, rgba(11, 143, 239, 0.08), rgba(255, 30, 45, 0.05)),
+        #ffffff;
+      border: 1px solid var(--border);
       border-radius: 30px;
       padding: 34px;
       max-width: 960px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
     }
 
     .download-box {
       background:
-        radial-gradient(circle at top left, rgba(255,45,45,0.20), transparent 34%),
-        linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.045));
-      border: 1px solid rgba(255,255,255,0.14);
+        radial-gradient(circle at top left, rgba(11, 143, 239, 0.12), transparent 34%),
+        linear-gradient(135deg, #ffffff, #eff6ff);
+      border: 1px solid var(--border);
       border-radius: 30px;
       padding: 36px;
       display: grid;
       grid-template-columns: 1fr 0.9fr;
       gap: 26px;
       align-items: center;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
     }
 
     .download-box h2 {
@@ -347,10 +383,16 @@
     }
 
     .download-steps {
-      background: rgba(0,0,0,0.22);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: #ffffff;
+      border: 1px solid var(--border);
       border-radius: 22px;
       padding: 22px;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .download-steps h3 {
+      color: var(--text);
+      margin-bottom: 14px;
     }
 
     ul {
@@ -361,7 +403,7 @@
 
     li::before {
       content: "✓";
-      color: #ff4a4a;
+      color: var(--red);
       font-weight: 900;
       margin-right: 10px;
     }
@@ -374,14 +416,16 @@
 
     .footer-cta {
       background: #ffffff;
-      color: #111;
+      color: var(--text);
       border-radius: 32px;
       padding: 42px;
       text-align: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
     }
 
     .footer-cta p {
-      color: #444;
+      color: var(--muted);
       font-size: 19px;
       max-width: 740px;
       margin: 0 auto 24px;
@@ -389,9 +433,11 @@
 
     footer {
       padding: 36px 0;
-      color: #999;
+      color: var(--muted);
       text-align: center;
       font-size: 14px;
+      border-top: 1px solid var(--border);
+      background: #ffffff;
     }
 
     @media (max-width: 860px) {
