@@ -171,7 +171,8 @@
 
     .primary-btn,
     .secondary-btn,
-    .download-btn {
+    .download-btn,
+    .revolut-btn {
       padding: 15px 22px;
       border-radius: 14px;
       font-weight: 800;
@@ -193,6 +194,13 @@
       box-shadow: 0 16px 34px rgba(11, 143, 239, 0.22);
     }
 
+    .revolut-btn {
+      background: #111827;
+      color: white;
+      box-shadow: 0 16px 34px rgba(17, 24, 39, 0.18);
+      margin-top: 14px;
+    }
+
     .secondary-btn {
       background: #ffffff;
       border: 1px solid var(--border);
@@ -205,6 +213,27 @@
       font-size: 14px;
       margin-top: 12px;
       max-width: 620px;
+    }
+
+    .micro-support-card {
+      margin-top: 22px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
+    }
+
+    .micro-support-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .micro-support-card p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 0;
     }
 
     .phone-card {
@@ -287,12 +316,6 @@
       font-size: 19px;
       max-width: 820px;
       margin-bottom: 20px;
-    }
-
-    .center {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .grid-3 {
@@ -561,10 +584,22 @@
           <p class="section-lead">
             StaySafe este disponibil acum în versiune FREE pentru Android. Aplicația poate fi descărcată direct de pe site și folosită imediat după configurarea contactului de urgență.
           </p>
+
           <a class="download-btn" href="staysafe-free.apk" download>Descarcă StaySafe FREE</a>
+
           <p class="download-note">
             Aplicația este semnată oficial. Instalarea se face manual prin APK, până la lansarea în Google Play.
           </p>
+
+          <div class="micro-support-card">
+            <h3>Susține lansarea în Google Play</h3>
+            <p>
+              Dacă vrei să ajuți direct la publicarea oficială StaySafe în Google Play, poți trimite o micro-contribuție prin Revolut. Chiar și 10 lei ajută.
+            </p>
+            <a class="revolut-btn" href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Chiar%20si%20o%20contributie%20mica%20ajuta%20la%20lansarea%20StaySafe%20in%20Google%20Play." target="_blank" rel="noopener">
+              Susține cu 10 lei prin Revolut
+            </a>
+          </div>
         </div>
 
         <div class="download-steps">
@@ -630,37 +665,14 @@
       <div class="container story-box">
         <h2 class="section-title">Povestea din spate</h2>
 
-        <p class="section-lead">
-          StaySafe nu a început ca un proiect sau ca o idee de business.
-        </p>
-
-        <p class="section-lead">
-          A început dintr-o nevoie reală.
-        </p>
-
-        <p class="section-lead">
-          Problemele mele de sănătate m-au pus de mai multe ori în situații în care fiecare secundă conta. Situații în care nu eram sigur dacă aș putea cere ajutor la timp.
-        </p>
-
-        <p class="section-lead">
-          Am căutat soluții existente, am testat aplicații, dar niciuna nu era suficient de simplă, suficient de rapidă sau gândită pentru momentele reale în care ai nevoie de ajutor.
-        </p>
-
-        <p class="section-lead">
-          Așa că am decis să construiesc eu una.
-        </p>
-
-        <p class="section-lead">
-          StaySafe este rezultatul acelei decizii.
-        </p>
-
-        <p class="section-lead">
-          Nu este doar o aplicație. Este încercarea mea de a avea o plasă de siguranță în momentele în care nu mai poți face nimic.
-        </p>
-
-        <p class="section-lead">
-          Iar dacă această aplicație poate ajuta și alți oameni în situații similare, atunci știu că tot efortul merită.
-        </p>
+        <p class="section-lead">StaySafe nu a început ca un proiect sau ca o idee de business.</p>
+        <p class="section-lead">A început dintr-o nevoie reală.</p>
+        <p class="section-lead">Problemele mele de sănătate m-au pus de mai multe ori în situații în care fiecare secundă conta. Situații în care nu eram sigur dacă aș putea cere ajutor la timp.</p>
+        <p class="section-lead">Am căutat soluții existente, am testat aplicații, dar niciuna nu era suficient de simplă, suficient de rapidă sau gândită pentru momentele reale în care ai nevoie de ajutor.</p>
+        <p class="section-lead">Așa că am decis să construiesc eu una.</p>
+        <p class="section-lead">StaySafe este rezultatul acelei decizii.</p>
+        <p class="section-lead">Nu este doar o aplicație. Este încercarea mea de a avea o plasă de siguranță în momentele în care nu mai poți face nimic.</p>
+        <p class="section-lead">Iar dacă această aplicație poate ajuta și alți oameni în situații similare, atunci știu că tot efortul merită.</p>
       </div>
     </section>
 
@@ -747,9 +759,9 @@
         <div class="footer-cta">
           <h2 class="section-title">Ajută-ne să ducem StaySafe mai departe</h2>
           <p>
-            StaySafe este deja disponibil și funcțional. Chiar și o contribuție mică ajută la lansarea oficială în Google Play și la dezvoltarea funcțiilor PRO.
+            StaySafe este deja disponibil și funcțional. Campania principală ajută la dezvoltarea versiunii PRO, extinderea funcțiilor avansate și lansarea oficială a aplicației.
           </p>
-          <a class="primary-btn" href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Chiar%20si%20o%20contributie%20mica%20ajuta%20la%20lansarea%20StaySafe%20in%20Google%20Play." target="_blank" rel="noopener">Susține campania</a>
+          <a class="primary-btn" href="https://4fund.com/ro/pda5jh" target="_blank" rel="noopener">Susține campania principală</a>
         </div>
       </div>
     </section>
