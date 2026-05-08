@@ -7,7 +7,7 @@
   <title>Contact - StaySafe</title>
   <meta name="description" content="Contact StaySafe. Trimite sugestii, bug-uri, întrebări sau mesaje de susținere pentru proiect." />
 
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 <body>
@@ -20,206 +20,173 @@
 
       <nav class="menu">
         <a href="despre.html">Despre proiect</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero page-hero">
+    <section class="contact-hero">
       <div class="container">
-        <div class="badge">Suport • Feedback • Colaborări</div>
-
-        <h1>Suntem aici să te ascultăm</h1>
-
-        <p>
-          Ai o sugestie, ai găsit un bug sau vrei să susții proiectul la alt nivel?
-          Trimite-mi un mesaj.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split-contact">
-
-        <div class="contact-card">
-          <h2>Contact direct</h2>
-
-          <p>
-            Pentru întrebări, feedback, propuneri sau probleme tehnice,
-            ne poți contacta direct la:
-          </p>
-
-          <a class="contact-email" href="mailto:contact@staysafeapp.ro">
-            contact@staysafeapp.ro
+        <div class="contact-top-actions">
+          <a class="btn btn-red" href="https://4fund.com/ro/pda5jh" target="_blank" rel="noopener">
+            Susține campania
           </a>
 
-          <p class="small-note">
-            Mesajele sunt citite manual. StaySafe este un proiect independent,
-            iar răspunsurile pot dura puțin în perioadele aglomerate.
-          </p>
-
-          <div class="contact-actions">
-            <a class="btn btn-red"
-               href="mailto:contact@staysafeapp.ro?subject=Mesaj%20StaySafe">
-              Trimite email direct
-            </a>
-
-            <a class="btn btn-dark"
-               href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Sustin%20lansarea%20StaySafe%20in%20Google%20Play"
-               target="_blank"
-               rel="noopener">
-              Susține prin Revolut
-            </a>
-          </div>
+          <a class="btn btn-dark" href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Sustin%20lansarea%20StaySafe%20in%20Google%20Play" target="_blank" rel="noopener">
+            Susține prin Revolut
+          </a>
         </div>
 
-        <div class="contact-card soft-card">
+        <div class="contact-title-block">
+          <div class="badge">Suport • Feedback • StaySafe PRO</div>
 
-          <h2>Formular contact & StaySafe PRO</h2>
+          <h1>Suntem aici să te ascultăm</h1>
 
           <p>
-            Dacă ești interesat de varianta PRO, vrei să raportezi un bug
-            sau să trimiți feedback direct din site,
-            completează formularul de mai jos.
-          </p>
-
-          <form
-            action="https://formspree.io/f/mdablbzw"
-            method="POST"
-            class="contact-form"
-          >
-
-            <input
-              type="text"
-              name="name"
-              placeholder="Numele tău"
-              required
-            >
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Adresa ta de email"
-              required
-            >
-
-            <select name="subject" required>
-              <option value="">Selectează subiectul</option>
-              <option value="Interes StaySafe PRO">Interes StaySafe PRO</option>
-              <option value="Feedback">Feedback</option>
-              <option value="Raportare bug">Raportare bug</option>
-              <option value="Colaborare">Colaborare</option>
-              <option value="Altceva">Altceva</option>
-            </select>
-
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Scrie mesajul tău aici..."
-              required
-            ></textarea>
-
-            <button type="submit" class="btn btn-blue">
-              Trimite mesajul
-            </button>
-          </form>
-
-          <p class="small-note">
-            Mesajele sunt trimise direct către:
-            <strong>contact@staysafeapp.ro</strong>
+            Ai o sugestie, ai găsit un bug sau vrei să susții proiectul la alt nivel?
+            Completează formularul de mai jos. Mesajul ajunge direct la echipa StaySafe.
           </p>
         </div>
 
+        <div class="premium-form-card">
+          <aside class="form-info-panel">
+            <div class="info-icon">✉️</div>
+
+            <h2>Îți răspund personal</h2>
+
+            <p>
+              StaySafe este un proiect independent. Mesajele sunt citite manual,
+              iar feedback-ul real ajută direct la îmbunătățirea aplicației.
+            </p>
+
+            <div class="info-list">
+              <div class="info-row">
+                <span>🛡️</span>
+                <div>
+                  <strong>Datele tale sunt în siguranță</strong>
+                  <p>Folosim datele doar pentru a-ți răspunde la mesaj.</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <span>⚡</span>
+                <div>
+                  <strong>Răspuns cât mai rapid</strong>
+                  <p>Încerc să răspund cât pot de repede, în funcție de volum.</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <span>🇷🇴</span>
+                <div>
+                  <strong>Proiect dezvoltat în România</strong>
+                  <p>Creat dintr-o nevoie reală, pentru oameni reali.</p>
+                </div>
+              </div>
+            </div>
+
+            <a class="contact-email-text" href="mailto:contact@staysafeapp.ro">
+              contact@staysafeapp.ro
+            </a>
+          </aside>
+
+          <section class="form-area">
+            <h2>Formular contact & StaySafe PRO</h2>
+
+            <p>
+              Dacă ești interesat de varianta PRO, vrei să raportezi un bug
+              sau să trimiți feedback, scrie-mi aici.
+            </p>
+
+            <form action="https://formspree.io/f/mdablbzw" method="POST" class="contact-form">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Numele tău</label>
+                  <input id="name" type="text" name="name" placeholder="Ex: Andrei" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Adresa ta de email</label>
+                  <input id="email" type="email" name="email" placeholder="exemplu@email.com" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subiect</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Selectează subiectul</option>
+                  <option value="Interes StaySafe PRO">Interes StaySafe PRO</option>
+                  <option value="Feedback">Feedback</option>
+                  <option value="Raportare bug">Raportare bug</option>
+                  <option value="Colaborare">Colaborare</option>
+                  <option value="Altceva">Altceva</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Mesaj</label>
+                <textarea id="message" name="message" rows="7" placeholder="Scrie mesajul tău aici..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-blue form-submit">
+                Trimite mesajul
+              </button>
+
+              <p class="form-note">
+                Mesajele sunt trimise direct către <strong>contact@staysafeapp.ro</strong>.
+              </p>
+            </form>
+          </section>
+        </div>
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section faq-section">
       <div class="container">
-
-        <h2>FAQ</h2>
-
-        <p class="section-lead">
-          Întrebări rapide despre StaySafe și dezvoltarea proiectului.
-        </p>
+        <div class="faq-header">
+          <h2>FAQ</h2>
+          <p>Întrebări rapide despre StaySafe și dezvoltarea proiectului.</p>
+        </div>
 
         <div class="faq-list">
-
           <article class="faq-item">
             <h3>Este sigură locația mea?</h3>
-
             <p>
-              Da. Datele de localizare sunt tratate cu grijă și sunt folosite
-              exclusiv pentru funcțiile de urgență ale aplicației.
-              În versiunile viitoare vor exista mecanisme suplimentare de
-              protecție și criptare.
+              Da. Datele de localizare sunt folosite doar pentru funcțiile de urgență.
+              În versiunile viitoare vor exista măsuri suplimentare de protecție și criptare.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Când apare varianta PRO?</h3>
-
             <p>
-              Lucrăm activ la ea. Dacă ești interesat,
-              lasă o adresă de email prin formular și vei fi contactat
-              atunci când versiunea PRO va fi pregătită pentru lansare.
+              Lucrăm activ la ea. Dacă ești interesat, lasă o adresă de email prin formular
+              și vei fi contactat când versiunea PRO este pregătită.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Cum pot ajuta?</h3>
-
             <p>
-              Poți ajuta prin feedback, distribuirea proiectului,
-              raportarea problemelor sau printr-o susținere pentru
-              lansarea în Google Play și dezvoltarea aplicației.
+              Poți ajuta prin feedback, testare, distribuirea proiectului sau printr-o donație
+              pentru lansarea în Google Play și dezvoltarea aplicației.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Pot raporta un bug?</h3>
-
             <p>
-              Da. Dacă poți, include modelul telefonului,
-              versiunea Android și pașii care au dus la problemă.
+              Da. Include modelul telefonului, versiunea Android și pașii care au dus la problemă.
             </p>
           </article>
-
         </div>
-      </div>
-    </section>
-
-    <section class="section cta-section">
-      <div class="container cta-box">
-
-        <h2>StaySafe crește cu ajutorul oamenilor care cred în el.</h2>
-
-        <p>
-          Orice mesaj, idee, test sau susținere ajută proiectul
-          să devină mai bun și să ajungă la mai mulți oameni.
-        </p>
-
-        <div class="cta-actions">
-          <a class="btn btn-red"
-             href="https://4fund.com/ro/pda5jh"
-             target="_blank"
-             rel="noopener">
-            Susține campania
-          </a>
-
-          <a class="btn btn-dark"
-             href="mailto:contact@staysafeapp.ro?subject=Mesaj%20StaySafe">
-            Scrie-mi direct
-          </a>
-        </div>
-
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-
       <div>
         <strong>StaySafe</strong>
         <p>Siguranță personală, dezvoltată dintr-o nevoie reală.</p>
@@ -232,7 +199,6 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Politica de confidențialitate</a>
       </div>
-
     </div>
   </footer>
 </body>
