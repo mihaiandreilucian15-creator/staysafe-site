@@ -29,20 +29,25 @@
     <section class="hero page-hero">
       <div class="container">
         <div class="badge">Suport • Feedback • Colaborări</div>
+
         <h1>Suntem aici să te ascultăm</h1>
+
         <p>
           Ai o sugestie, ai găsit un bug sau vrei să susții proiectul la alt nivel?
-          Trimite-mi un mail.
+          Trimite-mi un mesaj.
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container split-contact">
+
         <div class="contact-card">
           <h2>Contact direct</h2>
+
           <p>
-            Pentru întrebări, feedback, propuneri sau probleme tehnice, poți trimite un mesaj la adresa:
+            Pentru întrebări, feedback, propuneri sau probleme tehnice,
+            ne poți contacta direct la:
           </p>
 
           <a class="contact-email" href="mailto:contact@staysafeapp.ro">
@@ -50,99 +55,171 @@
           </a>
 
           <p class="small-note">
-            Mesajele sunt citite manual. Proiectul este independent, dar încerc să răspund cât mai repede posibil.
+            Mesajele sunt citite manual. StaySafe este un proiect independent,
+            iar răspunsurile pot dura puțin în perioadele aglomerate.
           </p>
 
           <div class="contact-actions">
-            <a class="btn btn-red" href="mailto:contact@staysafeapp.ro?subject=Feedback%20StaySafe">
-              Trimite email
+            <a class="btn btn-red"
+               href="mailto:contact@staysafeapp.ro?subject=Mesaj%20StaySafe">
+              Trimite email direct
             </a>
 
-            <a class="btn btn-dark" href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Sustin%20lansarea%20StaySafe%20in%20Google%20Play" target="_blank" rel="noopener">
+            <a class="btn btn-dark"
+               href="https://revolut.me/mihaiqpeq?currency=RON&amount=1000&note=Sustin%20lansarea%20StaySafe%20in%20Google%20Play"
+               target="_blank"
+               rel="noopener">
               Susține prin Revolut
             </a>
           </div>
         </div>
 
         <div class="contact-card soft-card">
-          <h2>Vrei să fii anunțat când apare PRO?</h2>
+
+          <h2>Formular contact & StaySafe PRO</h2>
+
           <p>
-            Dacă ești interesat de varianta PRO, trimite-mi un email cu subiectul
-            <strong>„Interes StaySafe PRO”</strong>. Vei fi contactat când versiunea PRO va fi pregătită pentru lansare.
+            Dacă ești interesat de varianta PRO, vrei să raportezi un bug
+            sau să trimiți feedback direct din site,
+            completează formularul de mai jos.
           </p>
 
-          <a class="btn btn-blue" href="mailto:contact@staysafeapp.ro?subject=Interes%20StaySafe%20PRO&body=Buna,%0D%0A%0D%0ASunt%20interesat%20de%20varianta%20StaySafe%20PRO.%0D%0A%0D%0AEmailul%20meu%20este:%0D%0A">
-            Lasă email pentru PRO
-          </a>
+          <form
+            action="https://formspree.io/f/mdablbzw"
+            method="POST"
+            class="contact-form"
+          >
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Numele tău"
+              required
+            >
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Adresa ta de email"
+              required
+            >
+
+            <select name="subject" required>
+              <option value="">Selectează subiectul</option>
+              <option value="Interes StaySafe PRO">Interes StaySafe PRO</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Raportare bug">Raportare bug</option>
+              <option value="Colaborare">Colaborare</option>
+              <option value="Altceva">Altceva</option>
+            </select>
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Scrie mesajul tău aici..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn-blue">
+              Trimite mesajul
+            </button>
+          </form>
 
           <p class="small-note">
-            Nu este un newsletter automat. Este doar o listă de interes pentru oamenii care vor să afle când apare varianta PRO.
+            Mesajele sunt trimise direct către:
+            <strong>contact@staysafeapp.ro</strong>
           </p>
         </div>
+
       </div>
     </section>
 
     <section class="section section-dark">
       <div class="container">
+
         <h2>FAQ</h2>
+
         <p class="section-lead">
-          Întrebări rapide despre StaySafe, siguranță și dezvoltarea aplicației.
+          Întrebări rapide despre StaySafe și dezvoltarea proiectului.
         </p>
 
         <div class="faq-list">
+
           <article class="faq-item">
             <h3>Este sigură locația mea?</h3>
+
             <p>
-              Da. Datele de localizare sunt tratate cu grijă și sunt folosite doar pentru funcția de urgență.
-              În versiunile viitoare, transmisia și stocarea datelor sensibile vor folosi mecanisme de protecție și criptare.
+              Da. Datele de localizare sunt tratate cu grijă și sunt folosite
+              exclusiv pentru funcțiile de urgență ale aplicației.
+              În versiunile viitoare vor exista mecanisme suplimentare de
+              protecție și criptare.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Când apare varianta PRO?</h3>
+
             <p>
-              Lucrăm intens la ea. Dacă ești interesat, poți trimite un email și vei fi contactat în momentul în care versiunea PRO este pregătită pentru lansare.
+              Lucrăm activ la ea. Dacă ești interesat,
+              lasă o adresă de email prin formular și vei fi contactat
+              atunci când versiunea PRO va fi pregătită pentru lansare.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Cum pot ajuta?</h3>
+
             <p>
-              Poți ajuta prin feedback, testare, distribuirea proiectului sau o donație pentru lansarea în Google Play și dezvoltarea funcțiilor viitoare.
+              Poți ajuta prin feedback, distribuirea proiectului,
+              raportarea problemelor sau printr-o susținere pentru
+              lansarea în Google Play și dezvoltarea aplicației.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>Pot raporta un bug?</h3>
+
             <p>
-              Da. Trimite un email cu modelul telefonului, versiunea Android, ce ai făcut înainte de eroare și, dacă poți, un screenshot.
+              Da. Dacă poți, include modelul telefonului,
+              versiunea Android și pașii care au dus la problemă.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section class="section cta-section">
       <div class="container cta-box">
+
         <h2>StaySafe crește cu ajutorul oamenilor care cred în el.</h2>
+
         <p>
-          Orice mesaj, test, idee sau susținere ajută proiectul să devină mai bun și să ajungă la mai mulți oameni.
+          Orice mesaj, idee, test sau susținere ajută proiectul
+          să devină mai bun și să ajungă la mai mulți oameni.
         </p>
 
         <div class="cta-actions">
-          <a class="btn btn-red" href="mailto:contact@staysafeapp.ro?subject=Mesaj%20StaySafe">
-            Scrie-mi un email
-          </a>
-          <a class="btn btn-dark" href="https://4fund.com/ro/pda5jh" target="_blank" rel="noopener">
+          <a class="btn btn-red"
+             href="https://4fund.com/ro/pda5jh"
+             target="_blank"
+             rel="noopener">
             Susține campania
           </a>
+
+          <a class="btn btn-dark"
+             href="mailto:contact@staysafeapp.ro?subject=Mesaj%20StaySafe">
+            Scrie-mi direct
+          </a>
         </div>
+
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
+
       <div>
         <strong>StaySafe</strong>
         <p>Siguranță personală, dezvoltată dintr-o nevoie reală.</p>
@@ -155,6 +232,7 @@
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Politica de confidențialitate</a>
       </div>
+
     </div>
   </footer>
 </body>
