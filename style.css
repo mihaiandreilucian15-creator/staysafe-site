@@ -102,6 +102,10 @@ img{
     linear-gradient(180deg,#ffffff,#f8fafc);
 }
 
+.page-hero{
+  padding-bottom:50px;
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns:1.1fr 0.9fr;
@@ -151,6 +155,10 @@ img{
   border-radius:16px;
   font-weight:800;
   transition:0.2s;
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:16px;
 }
 
 .btn:hover{
@@ -370,6 +378,136 @@ img{
   flex-wrap:wrap;
 }
 
+.split-contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+
+.contact-card{
+  background:#ffffff;
+  border:1px solid var(--border);
+  border-radius:28px;
+  padding:34px;
+  box-shadow:0 16px 40px rgba(15,23,42,0.06);
+}
+
+.contact-card h2{
+  margin-bottom:16px;
+}
+
+.contact-card p{
+  color:var(--muted);
+  font-size:17px;
+}
+
+.contact-email{
+  display:inline-block;
+  margin:18px 0;
+  font-size:22px;
+  font-weight:800;
+  color:var(--blue);
+}
+
+.small-note{
+  margin-top:18px;
+  color:var(--muted);
+  font-size:14px !important;
+}
+
+.contact-actions{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
+.contact-form{
+  display:grid;
+  gap:16px;
+  margin-top:24px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+  width:100%;
+  padding:16px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  font-size:16px;
+  font-family:inherit;
+  color:var(--text);
+}
+
+.contact-form textarea{
+  resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus{
+  outline:none;
+  border-color:var(--blue);
+  box-shadow:0 0 0 4px rgba(11,143,239,0.12);
+}
+
+.faq-list{
+  display:grid;
+  gap:22px;
+}
+
+.faq-item{
+  background:#ffffff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:0 16px 40px rgba(15,23,42,0.05);
+}
+
+.faq-item h3{
+  margin-bottom:12px;
+  font-size:22px;
+}
+
+.faq-item p{
+  color:var(--muted);
+}
+
+.text-page{
+  max-width:950px;
+}
+
+.text-page h2{
+  margin-top:34px;
+}
+
+.text-page h2:first-child{
+  margin-top:0;
+}
+
+.text-page p{
+  margin-bottom:22px;
+  font-size:18px;
+  color:var(--muted);
+}
+
+.privacy-list{
+  margin:20px 0 30px;
+  padding-left:20px;
+}
+
+.privacy-list li{
+  margin-bottom:10px;
+  color:var(--muted);
+}
+
+.privacy-list li::marker{
+  color:var(--red);
+}
+
 .site-footer{
   padding:60px 0;
   border-top:1px solid var(--border);
@@ -415,6 +553,10 @@ img{
   }
 
   .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .split-contact{
     grid-template-columns:1fr;
   }
 
@@ -466,8 +608,16 @@ img{
     flex-direction:column;
   }
 
+  .contact-actions{
+    flex-direction:column;
+  }
+
   .cta-box{
     padding:32px 24px;
+  }
+
+  .contact-card{
+    padding:28px 22px;
   }
 
   .section{
