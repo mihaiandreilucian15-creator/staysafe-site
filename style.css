@@ -5,15 +5,15 @@
 }
 
 :root{
-  --bg:#05070a;
-  --card:#0f1720;
-  --card-light:#111827;
-  --text:#f8fafc;
-  --muted:#94a3b8;
-  --blue:#0ea5e9;
-  --blue-dark:#0284c7;
-  --red:#ff2d3d;
-  --border:#1e293b;
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --card-light:#ffffff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --blue:#0b8fef;
+  --blue-dark:#075fa8;
+  --red:#ff1e2d;
+  --border:#e2e8f0;
   --white:#ffffff;
 }
 
@@ -48,7 +48,7 @@ img{
   top:0;
   z-index:999;
   backdrop-filter:blur(12px);
-  background:rgba(5,7,10,0.92);
+  background:rgba(255,255,255,0.94);
   border-bottom:1px solid var(--border);
 }
 
@@ -91,14 +91,15 @@ img{
 }
 
 .menu a:hover{
-  color:var(--white);
+  color:var(--text);
 }
 
 .hero{
   padding:100px 0 80px;
   background:
-    radial-gradient(circle at top left, rgba(14,165,233,0.15), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(255,45,61,0.12), transparent 35%);
+    radial-gradient(circle at top left, rgba(11,143,239,0.16), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(255,30,45,0.10), transparent 35%),
+    linear-gradient(180deg,#ffffff,#f8fafc);
 }
 
 .hero-grid{
@@ -112,11 +113,12 @@ img{
   display:inline-block;
   padding:10px 16px;
   border-radius:999px;
-  background:rgba(255,255,255,0.05);
+  background:#ffffff;
   border:1px solid var(--border);
   color:var(--muted);
   font-size:14px;
   margin-bottom:24px;
+  box-shadow:0 8px 20px rgba(15,23,42,0.06);
 }
 
 .hero h1{
@@ -164,13 +166,13 @@ img{
 .btn-blue{
   background:var(--blue);
   color:white;
-  box-shadow:0 16px 40px rgba(14,165,233,0.25);
+  box-shadow:0 16px 40px rgba(11,143,239,0.22);
 }
 
 .btn-dark{
   background:#111827;
   color:white;
-  border:1px solid var(--border);
+  border:1px solid #111827;
 }
 
 .support-line{
@@ -197,10 +199,10 @@ img{
   width:340px;
   min-height:620px;
   border-radius:38px;
-  background:linear-gradient(180deg,#0f1720,#111827);
+  background:linear-gradient(180deg,#ffffff,#eff6ff);
   border:1px solid var(--border);
   padding:28px;
-  box-shadow:0 30px 80px rgba(0,0,0,0.4);
+  box-shadow:0 30px 80px rgba(15,23,42,0.12);
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -219,6 +221,7 @@ img{
   height:210px;
   border-radius:50%;
   background:var(--red);
+  color:white;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -235,7 +238,7 @@ img{
 
 .phone-info span,
 .phone-info strong{
-  background:rgba(255,255,255,0.05);
+  background:#ffffff;
   border:1px solid var(--border);
   border-radius:14px;
   padding:14px;
@@ -271,6 +274,7 @@ img{
   border-radius:24px;
   padding:28px;
   transition:0.2s;
+  box-shadow:0 16px 40px rgba(15,23,42,0.06);
 }
 
 .card:hover{
@@ -281,7 +285,7 @@ img{
   width:56px;
   height:56px;
   border-radius:16px;
-  background:rgba(14,165,233,0.1);
+  background:rgba(11,143,239,0.10);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -299,7 +303,7 @@ img{
 }
 
 .section-dark{
-  background:#0b1118;
+  background:#ffffff;
 }
 
 .table-wrap{
@@ -311,10 +315,14 @@ img{
   width:100%;
   border-collapse:collapse;
   min-width:760px;
+  background:#ffffff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 16px 40px rgba(15,23,42,0.06);
 }
 
 .compare-table th{
-  background:#111827;
+  background:#eff6ff;
   padding:18px;
   text-align:left;
   border:1px solid var(--border);
@@ -327,7 +335,7 @@ img{
 }
 
 .compare-table tr:nth-child(even){
-  background:rgba(255,255,255,0.02);
+  background:#f8fafc;
 }
 
 .center{
@@ -340,11 +348,12 @@ img{
 }
 
 .cta-box{
-  background:linear-gradient(135deg,#111827,#0f1720);
+  background:linear-gradient(135deg,#ffffff,#eff6ff);
   border:1px solid var(--border);
   border-radius:34px;
   padding:50px;
   text-align:center;
+  box-shadow:0 22px 50px rgba(15,23,42,0.08);
 }
 
 .cta-box p{
@@ -364,7 +373,7 @@ img{
 .site-footer{
   padding:60px 0;
   border-top:1px solid var(--border);
-  background:#030507;
+  background:#ffffff;
 }
 
 .footer-grid{
@@ -387,7 +396,7 @@ img{
 }
 
 .footer-grid a:hover{
-  color:white;
+  color:var(--text);
 }
 
 .made{
